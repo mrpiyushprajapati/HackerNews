@@ -1,95 +1,102 @@
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-  }
-  body{
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  }
-.item{
-    border: 1px black solid;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    margin: 3vh;
-    padding-left: 2vh;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
-.item a{
-    text-decoration: none;
-    color: white;
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
-div{
-    display: inline-block;
+.item {
+  border-radius: 25px;
+  background-color: #2d3f4c;
+  color: whitesmoke;
+  margin: 3vh;
+  padding-left: 2vh;
+}
+.item a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.item:hover {
+  background-color: #1a2d3a;
+}
+div {
+  display: inline-block;
 }
 nav {
-    background: #2d3f4c;
-    height: 70px;
-    width: 100%;
-  }
-  
-  .logo {
-    color: white;
-    font-size: 35px;
-    line-height: 70px;
-    padding: 0 100px;
-  }
-  
-  nav ul {
-    float: right;
-    margin-right: 20px;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  
-  nav ul li a {
-    color: snow;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-  
+  background: #1a2d3a;
+  height: 70px;
+  width: 100%;
+}
+
+.logo {
+  color: whitesmoke;
+  font-size: 35px;
+  line-height: 70px;
+  padding: 0 100px;
+  font-family: "Rampart One", cursive;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: whitesmoke;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 900px) {
   .checkbtn {
-    font-size: 30px;
-    color: snow;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    display: block;
   }
-  
-  #check {
-    display: none;
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
   }
-  
-  @media (max-width: 900px) {
-    .checkbtn {
-      display: block;
-    }
-    ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-    }
-    nav ul li {
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a {
-      font-size: 20px;
-    }
-    #check:checked ~ ul {
-      left: 0;
-    }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
