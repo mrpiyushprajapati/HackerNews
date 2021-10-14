@@ -7,34 +7,17 @@
 body {
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
-.item {
-  border-radius: 25px;
-  background-color: #2d3f4c;
-  color: whitesmoke;
-  margin: 3vh;
-  padding-left: 2vh;
-}
-.item a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.item:hover {
-  background-color: #1a2d3a;
-}
-div {
-  display: inline-block;
-}
+/* Nav Bar */
 nav {
   background: #1a2d3a;
   height: 70px;
   width: 100%;
 }
-
 .logo {
   color: whitesmoke;
   font-size: 35px;
   line-height: 70px;
-  padding: 0 100px;
+  padding-left: 50px;
   font-family: "Rampart One", cursive;
 }
 
@@ -75,7 +58,10 @@ nav ul li a:hover {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 965px) {
+    .logo{
+        padding-left: 20px;
+    }
   .checkbtn {
     display: block;
   }
@@ -100,3 +86,29 @@ nav ul li a:hover {
     left: 0;
   }
 }
+
+
+
+/* News Content */
+.item {
+    border-radius: 25px;
+    background-color: #2d3f4c;
+    color: whitesmoke;
+    margin: 3vh;
+    padding-left: 2vh;
+    padding-top: 2vh;
+  }
+  .item a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .title{
+      font-size: 20px;
+  }
+  .item:hover {
+    background-color: #1a2d3a;
+  }
+  div {
+    display: inline-block;
+  }
