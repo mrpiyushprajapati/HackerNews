@@ -1,3 +1,8 @@
+footer{
+    background-color: #1a2d3a;
+    padding: 2%;
+    color: whitesmoke;
+}
 
 .Hack ul {
 margin-top: 0;
@@ -22,7 +27,8 @@ padding: 0 15px;
 opacity: 1;
 }
 .Searchbox {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    background: skyblue;
-    box-shadow: slategray;
 }
